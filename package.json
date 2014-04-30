@@ -1,0 +1,31 @@
+{
+  "name": "cdelorme-watch",
+  "version": "0.0.1",
+  "description": "An OOP fs.watch wrapper with whitelist filtration and accessible cache",
+  "main": "./lib/watch.js",
+  "directories": {
+    "test": "./test",
+    "lib": "./lib"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "chai": "^1.9.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdelorme/mrswe"
+  },
+  "keywords": [
+    "fswatch"
+  ],
+  "author": "Casey DeLorme <cdelorme@gmail.com> (http://www.caseydelorme.com)",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/cdelorme/watch/issues",
+    "email": "cdelorme@gmail.com"
+  },
+  "homepage": "https://github.com/cdelorme/watch"
+}
