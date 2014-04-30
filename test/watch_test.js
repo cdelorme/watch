@@ -22,3 +22,11 @@ q = require('q');
 chai = require('chai');
 assert = chai.assert;
 
+
+describe('test watch', function() {
+    it('should be defined', function(done) {
+        var monitor = watch.start(__dirname);
+        assert.isDefined(monitor);
+        done();
+    })
+});
