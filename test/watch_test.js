@@ -22,11 +22,26 @@ q = require('q');
 chai = require('chai');
 assert = chai.assert;
 
+/**
+ * variables
+ */
+var watch_directory = path.join(__dirname, 'data');
 
+
+/**
+ * tests
+ */
 describe('test watch', function() {
     it('should be defined', function(done) {
-        var monitor = watch.start(__dirname);
+        var monitor = watch.start(watch_directory);
         assert.isDefined(monitor);
         done();
+    })
+    it('should emit walked with at least one (the parent) directory', function(done) {
+        var monitor = watch.start(watch_directory);
+        monitor.on('walked', function() {
+            assert.isTrue(Object.keys(monitor.directories).length > 0);
+            done();
+        });
     })
 });
