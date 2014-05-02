@@ -1,6 +1,6 @@
 {
   "name": "cdelorme-watch",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "An OOP fs.watch wrapper with whitelist filtration and accessible cache",
   "main": "./lib/watch.js",
   "directories": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cdelorme/mrswe"
+    "url": "https://github.com/cdelorme/watch"
   },
   "keywords": [
     "fswatch"
