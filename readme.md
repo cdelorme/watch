@@ -69,7 +69,7 @@ Here are the four used by the monitor:
 - deleted
 - walked
 
-The first three will supply the file name to the callback, the last one is used to check when the file system walk is finished (as this occurs asynchronously).
+The first three are triggered by the directory being watched.  Both `added` and `modified` will return the full path to the file and related stats for detailed information.  The `deleted` method returns only the full file path as stat is no longer available (the file is gone).  Finally, `walked` is triggered by the `walk` method upon completion, and supplies the entire files array.
 
 
 ## references
