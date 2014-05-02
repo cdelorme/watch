@@ -33,6 +33,14 @@ Attach event listeners:
 
     monitor.on('event_name', callback);
 
+You can empty the catch but continue monitoring the parent directory (or call walk freshly) with:
+
+    monitor.empty();
+
+If you want to stop monitoring:
+
+    monitor.destroy();
+
 
 ### arguments
 
